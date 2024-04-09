@@ -8,7 +8,7 @@ WARNING!
 
 The AvionicsDuino CAN Flight Data Recorder must only be used with the following AvionicsDuino software versions:
 
-- AvionicsDuino EFIS                 V 3.01 or later
+- AvionicsDuino EFIS                \t V 3.01 or later
 
 - AvionicsDuino AHRS                 V 2.1 or later
 
