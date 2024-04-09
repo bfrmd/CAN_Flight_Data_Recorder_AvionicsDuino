@@ -7,8 +7,8 @@ This module is based on an Arduino Nano ESP32 Board.
 WARNING!
 
 The AvionicsDuino CAN Flight Data Recorder must only be used with the following AvionicsDuino software versions:
-
-- AvionicsDuino EFIS&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;V 3.01 or later
+<pre>
+- AvionicsDuino EFIS&nbsp;&nbsp;&nbsp;&nbsp; V 3.01 or later
 
 - AvionicsDuino AHRS                 V 2.1 or later
 
@@ -17,6 +17,6 @@ The AvionicsDuino CAN Flight Data Recorder must only be used with the following 
 - AvionicsDuino Micro EMS            V 4.04 or later
 
 - AvionicsDuino EMS                  V 1.7 or later
-
+</pre>
 
 In conjunction with the second CAN bus configuration, see https://avionicsduino.com/index.php/en/can-bus/
