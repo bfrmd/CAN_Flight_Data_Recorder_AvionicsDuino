@@ -6,7 +6,7 @@ This module is based on an Arduino Nano ESP32 Board.
 
 WARNING!
 
-The AvionicsDuino CAN Flight Data Recorder must only be used with the following AvionicsDuino software versions:
+The AvionicsDuino CAN Flight Data Recorder can only be used with the following AvionicsDuino software versions:
 <pre>
 - AvionicsDuino EFIS                 V 3.01 or later
 
