@@ -1,4 +1,4 @@
-# CAN Flight Data Recorder AvionicsDuino
+# AvionicsDuino CAN Flight Data Recorder
 
 This is the software of the AvionicsDuino CAN Flight Data Recorder described here: https://avionicsduino.com/index.php/en/flight-data-recorder/
 
