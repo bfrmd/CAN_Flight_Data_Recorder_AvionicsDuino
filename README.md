@@ -19,4 +19,4 @@ The AvionicsDuino CAN Flight Data Recorder must only be used with the following 
 - AvionicsDuino EMS                  V 1.7 or later
 </pre>
 
-In conjunction with the second CAN bus configuration, see https://avionicsduino.com/index.php/en/can-bus/
+And always in conjunction with the second CAN bus configuration of the AvionicsDuino project, see https://avionicsduino.com/index.php/en/can-bus/
