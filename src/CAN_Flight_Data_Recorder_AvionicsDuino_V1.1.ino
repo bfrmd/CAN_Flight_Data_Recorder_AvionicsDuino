@@ -487,9 +487,9 @@ static void handle_rx_message(twai_message_t& message) // This function updates 
              canDataRealTime.AccZ = *(float*)(message.data+4);
              break;
 
-    case 24: canDataRealTime.Vz  = (*(float*)(message.data+0))* 196.8504;                  // data received from the AHRS in m/s, unfiltered, it is converted to ft/min.
-             canDataRealTime.trk = *(float*)(message.data+4);                              // The AHRS transmits to the CAN Bus an unfiltered trk float value, in degrees, from -180° to +180°.
-             if (canDataRealTime.trk < 0) canDataRealTime.trk = 360 + canDataRealTime.trk; // Conversion from 0 to 360°
+    case 24: canDataRealTime.Vz  = (*(float*)(message.data+0))* 196.8504;     // data received from the AHRS in m/s, unfiltered, it is converted to ft/min.
+             canDataRealTime.trk = *(float*)(message.data+4);                 // The AHRS transmits to the CAN Bus an unfiltered trk float value, in degrees, from -180° to +180°.
+             if (canDataRealTime.trk < 0) canDataRealTime.trk += 360;         // Conversion from -180 -> +180 to 0 -> +360°
              break;
              
     case 26: canDataRealTime.lowerLimit =  *(uint8_t*)(message.data+0); 
@@ -498,7 +498,8 @@ static void handle_rx_message(twai_message_t& message) // This function updates 
              canDataRealTime.vBat       =    *(float*)(message.data+4);
              break;
     
-    case 28: canDataRealTime.magHeading = *(float*)(message.data+0);
+    case 28: canDataRealTime.magHeading = *(float*)(message.data+0);              // The AHRS transmits to the CAN Bus an unfiltered magHeading float value in degrees from -180° to +180°
+             if (canDataRealTime.magHeading<0) canDataRealTime.magHeading += 360; // Conversion from -180 -> +180 to 0 -> +360°
              break;
     
     case 30: canDataRealTime.altitudeGNSS    = *(float*)(message.data+0);
